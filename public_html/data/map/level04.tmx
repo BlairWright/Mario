@@ -27,5 +27,6 @@
     <property name="level" value="level05"/>
    </properties>
   </object>
+  <object name="background" x="1024" y="514"/>
  </objectgroup>
 </map>
