@@ -23,11 +23,13 @@ game.PlayerEntity = me.Entity.extend({
     update: function(delta) {
         if (me.input.isKeyPressed("right")) {
             this.body.vel.x += this.body.accel.x * me.timer.tick;
+        if (me.input.isKeyPressed("up")) {
+            this.body.vel.x += this.body.accel.x * me.timer.tick;
 
         } else {
             this.body.vel.x = 0;
         }
-        this.body.update(delta);
+        this.body.update(delta);3
         me.collision.check(this, true, this.collideHandler.bind(this), true);
         if (this.body.vel.x !== 0) {
             if (!this.renderable.isCurrentAnimation("smallWalk")) {
