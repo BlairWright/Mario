@@ -45,10 +45,10 @@
   <object name="levelTrigger" x="972.727" y="424.242" width="84.8485" height="142.424">
    <properties>
     <property name="level" value="level05"/>
-    <property name="xSpawn" value=""/>
+    <property name="xSpawn" value="0"/>
+    <property name="ySpawn" value="0"/>
    </properties>
   </object>
-  <object name="background" x="1024" y="514"/>
  </objectgroup>
  <layer name="foreground1" width="16" height="9">
   <data encoding="base64">

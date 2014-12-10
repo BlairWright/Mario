@@ -58,7 +58,7 @@ game.PlayerEntity = me.Entity.extend({
     }
 
 });
-// level trigger to spawn
+// level trigger to 
 game.LevelTrigger = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, settings]);
@@ -71,7 +71,7 @@ game.LevelTrigger = me.Entity.extend({
         this.body.setCollisionMask(me.collision.types.NO_OBJECT);
         me.levelDirector.loadLevel(this.level);
         me.state.current().resetPlayer(this.xSpawn, this.ySpawn);
-        me.state.current().resetPlayer();
+        //me.state.current().resetPlayer();
     }
 
 });
